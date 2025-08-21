@@ -92,7 +92,13 @@
             go.enable = true;
             lua.enable = true;
             python.enable = true;
-            php.enable = true;
+            php = {
+              enable = true;
+              lsp = {
+                enable = true;
+                server = "intelephense";
+              };
+            };
             tailwind.enable = true;
           };
 
